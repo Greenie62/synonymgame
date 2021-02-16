@@ -243,8 +243,8 @@ header{
 
 
 .confirmBtn{
-    left:50%;
-    top:25px;
+    left:56%;
+    top:36px;
     padding:.5em;
     background:rgb(77, 206, 77);
     border-radius:100px;
@@ -271,7 +271,7 @@ header{
 .questionh2{
     top:15%;
     background:white;
-    width:75%;
+    width:82%;
     border-top-right-radius:50px;
     /* left:45%; */
     /* color:red; */
