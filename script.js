@@ -362,7 +362,7 @@ async function fetchSynonyms(){
         alert("Sorry, we couldnt find any synonyms for that word choice, please choose again")
         let word = prompt("Your word choice?");
         json = await fetch(`https://api.datamuse.com/words?ml=${word}&max=${quizLength}`)
-        data = await data.json();
+        data = await json.json();
 
       
     }
