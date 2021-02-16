@@ -1,0 +1,310 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position:relative;
+}
+
+
+body{
+    height:100vh;
+    width:100vw;
+    background:linear-gradient(to right,lightgray,gray)
+
+}
+
+
+header, footer{
+    text-align:center;
+    height:10vh;
+    width:100%;
+    background:linear-gradient(to right,rgb(86, 86, 238),rgb(70, 70, 238));
+    text-shadow:2px -2px 7px white;
+}
+
+header{
+    background:linear-gradient(to right,rgb(86, 86, 238),rgb(70, 70, 238));
+    text-shadow:2px -2px 7px white;
+}
+
+.headerone{
+    top:5%;
+    font-size:35px;
+}
+
+.scoreRow{
+    height:5vh;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    box-shadow:2px 3px 8px black;
+}
+
+.correctDOM, .wrongDOM,.scoreDOM{
+    color:rgb(101, 101, 231);
+    text-shadow:1px 0px 4px white;
+    left:5px;
+    font-size:20px;
+}
+
+.gameWrapper{
+    height:80vh;
+    width:100%;
+}
+
+.gameCard{
+    width:100%;
+    height:60%;
+    /* border:1px solid black; */
+    top:20%;
+    /* left:12%; */
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:2;
+}
+
+
+.startCard{
+    height:100%;
+    width:100%;
+    /* background:green; */
+}
+
+.h2greetingone, .h2greetingtwo, .h2greetingthree{
+    font-size:32px;
+    top:30%;
+    text-shadow:1px -2px 4px white;
+}
+
+.h2greetingone{
+    font-size:50px;
+    transition:1s ease;
+    animation:sliderStartOne 2s 1s forwards;
+    left:-75px;
+    z-index:0;
+}
+
+.h2greetingtwo{
+    height:0px;
+    overflow:auto;
+    left:15px;
+    animation:sliderStartTwo 2s 2s forwards;
+}
+
+
+.h2greetingthree{
+    opacity:0;
+    /* overflow:auto; */
+    left:30%;
+    animation:sliderStartThree 3s 2s forwards;
+}
+
+
+.startBtn{
+    top:23%;
+    left:60%;
+    width:20%;
+    height:10%;
+    border-radius:60px;
+    top:-120%;
+    opacity:0;
+    animation:dropStartBtn 2s 3s forwards;
+    outline:none;
+    font-size:25px;
+    cursor:pointer;
+}
+
+
+
+@keyframes sliderStartOne{
+    100%{left:75px}
+
+}
+
+@keyframes sliderStartTwo{
+    100%{height:45px}
+
+}
+
+@keyframes sliderStartThree{
+    100%{opacity:1}
+
+}
+
+@keyframes dropStartBtn{
+    50%{top:-10%;opacity:0}
+    100%{top:23%;opacity:1}
+    /* 100%{top:60%;opacity:1} */
+}
+
+
+
+.selectWordCard{
+    height:100%;
+    width:100%;
+    background:rgb(0,0,255,0.7)
+}
+
+
+.selectWordDiv{
+    height:60%;
+    width:90%;
+    /* left:2%; */
+    background:rgb(0,0,255,0.7);
+    border-radius:200px;
+    box-shadow:20px 1px 10px white;
+}
+
+.h1SelectWord, .h2SelectWord{
+    left:15%;
+    top:25px;
+    text-shadow:2px -2px 7px white;
+}
+
+.arrowh2{
+    left:75%;
+    top:-90px;
+    /* background:orange; */
+    width:100px;
+    transform:rotate(-40deg);
+    transition:1s ease;
+    font-size:40px;
+    display:none;
+    position:absolute;
+}
+
+
+.errorh4{
+    top:225px;
+    left:25%;
+    display:none;
+}
+
+
+
+
+.selectDiv{
+    left:50%;
+    top:5%;
+    background:rgb(187, 174, 174);
+    width:150px;
+    border-radius:10%;
+    padding:.25em;
+    
+}
+
+.chooseWordDiv{
+    top:55px;
+    left:15%;
+}
+
+
+.wordInput{
+    height:30px;
+    margin-right:5px;
+    outline:none;
+    background:whitesmoke;
+    font-size:20px;
+    /* left:-25px; */
+}
+
+.randomBtn, .enterBtn{
+    top:35px;
+    left:-35%;
+    border:1px solid black;
+    border-radius:100px;
+    background:rgb(70, 66, 66);
+    color:white;
+    padding:.5em;
+    outline:none;
+}
+
+.randomBtn{
+    margin-right:5px;
+    background:rgb(255,0,0,.7);
+}
+
+.h3confirm, .h3confirmtwo{
+    top:-175px;
+    left:15px;
+}
+
+.wordSpan{
+    font-size:25px;
+    color:red;
+}
+
+
+.confirmBtn{
+    left:30%;
+    top:150px;
+    padding:.5em;
+    background:rgb(77, 206, 77);
+    border-radius:100px;
+    width:40%;
+    height:20%;
+    outline:none;
+    
+}
+
+
+
+.triviaCard{
+    width:100%;
+    height:65%;
+    border:1px solid black;
+}
+
+
+.questionh5{
+    top:5%;
+    left:15;
+}
+
+.questionh2{
+    top:15%;
+    background:white;
+    width:75%;
+    border-top-right-radius:50px;
+    /* left:45%; */
+    /* color:red; */
+}
+
+
+
+.radioInputDiv{
+    top:45px;
+    left:10px;
+    text-align:center;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+}
+
+.radioValBtn{
+    top:-10px;
+    left:65%;
+    width:60px;
+     height:25px; 
+    border-radius:10%;
+    
+}
+
+.radioinput{
+    margin:5px 0px;
+    }
+
+.radioword{
+    font-size:20px;
+}
+
+
+
+
+footer{
+    height:5vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
