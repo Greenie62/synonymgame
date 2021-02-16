@@ -393,5 +393,5 @@ function gameOver(){
         gameCard.appendChild(gameOverDiv)
 
 
-        document.querySelector(".playAgainBtn").onclick=startGame;
+        document.querySelector(".playAgainBtn").onclick=playGame;
 }
