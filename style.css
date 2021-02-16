@@ -17,7 +17,7 @@ body{
 
 header, footer{
     text-align:center;
-    height:10vh;
+    height:20vh;
     width:100%;
     background:linear-gradient(to right,rgb(86, 86, 238),rgb(70, 70, 238));
     text-shadow:2px -2px 7px white;
@@ -155,6 +155,7 @@ header{
     background:rgb(0,0,255,0.7);
     border-radius:200px;
     box-shadow:20px 1px 10px white;
+    top:-10px;
 }
 
 .h1SelectWord, .h2SelectWord{
@@ -212,7 +213,7 @@ header{
 
 .randomBtn, .enterBtn{
     top:35px;
-    left:-35%;
+    left:0%;
     border:1px solid black;
     border-radius:100px;
     background:rgb(70, 66, 66);
@@ -231,6 +232,10 @@ header{
     left:15px;
 }
 
+.h3confirm{
+    top:-225px;
+}
+
 .wordSpan{
     font-size:25px;
     color:red;
@@ -238,8 +243,8 @@ header{
 
 
 .confirmBtn{
-    left:30%;
-    top:150px;
+    left:40%;
+    top:5px;
     padding:.5em;
     background:rgb(77, 206, 77);
     border-radius:100px;
