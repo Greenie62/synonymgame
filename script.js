@@ -217,7 +217,6 @@ function chooseClientWord(){
 }
 
 
-fetchSynonyms('chalk')
 
 
 
