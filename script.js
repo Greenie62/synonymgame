@@ -367,6 +367,11 @@ async function fetchSynonyms(){
       
     }
 
+    if(data.length < quizLength){
+        alert("We could only dig up " + data.length + " words so we shortened the quiz for you! :)");
+        quizLength = data.length;
+    }
+
     console.log('SYNONYMS:',data)
     return data;
 }
