@@ -71,6 +71,7 @@ function playGame(){
     wrongWordCount = 0;
     rightWordCount = 0;
     currentRightWord = ""
+    questCount = 0;
 
 var correct=0;
 var wrong = 0;
@@ -357,6 +358,15 @@ async function fetchSynonyms(){
 
     let json = await fetch(`https://api.datamuse.com/words?ml=${currentWord}&max=${quizLength}`)
     let data = await json.json();
+
+    if(!data.length){
+        alert("Sorry, we couldnt find any synonyms for that word choice, please choose again")
+        let word = prompt("Your word choice?");
+        json = await fetch(`https://api.datamuse.com/words?ml=${word}&max=${quizLength}`)
+        data = await data.json();
+
+      
+    }
 
     console.log('SYNONYMS:',data)
     return data;
