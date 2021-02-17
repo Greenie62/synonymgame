@@ -363,6 +363,7 @@ async function fetchSynonyms(){
         let word = prompt("Your word choice?");
         json = await fetch(`https://api.datamuse.com/words?ml=${word}&max=${quizLength}`)
         data = await json.json();
+        currentWord = word;
 
       
     }
